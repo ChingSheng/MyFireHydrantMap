@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/city_taipei" android:title="@string/city_taipei">
+        <menu>
+            <item android:id="@+id/chung_zheng"
+                  android:title="@string/chung_zheng"/>
+            <item android:id="@+id/chung_shan"
+                  android:title="@string/chung_shan"/>
+            <item android:id="@+id/shin_yi"
+                  android:title="@string/shin_yi"/>
+            <item android:id="@+id/nay_hu"
+                  android:title="@string/nay_hu"/>
+            <item android:id="@+id/bei_tou"
+                  android:title="@string/bei_tou"/>
+            <item android:id="@+id/nan_gang"
+                android:title="@string/nan_gang"/>
+            <item android:id="@+id/shih_lin"
+                android:title="@string/shih_lin"/>
+            <item android:id="@+id/da_tong"
+                android:title="@string/da_tong"/>
+            <item android:id="@+id/da_an"
+                android:title="@string/da_an"/>
+            <item android:id="@+id/wen_shan"
+                android:title="@string/wen_shan"/>
+            <item android:id="@+id/sung_shan"
+                android:title="@string/sung_shan"/>
+        </menu>
+    </item>
+
+    <item android:id="@+id/city_new_taipei" android:title="@string/city_new_taipei">
+        <menu>
+            <item android:id="@+id/shang_chun"
+                  android:title="@string/shang_chun"/>
+            <item android:id="@+id/chung_ho"
+                  android:title="@string/chung_ho"/>
+            <item android:id="@+id/shin_dien"
+                  android:title="@string/shin_dien"/>
+            <item android:id="@+id/yong_ho"
+                android:title="@string/yong_ho"/>
+            <item android:id="@+id/shi_zi"
+                android:title="@string/shi_zi"/>
+            <item android:id="@+id/wan_hua"
+                android:title="@string/wan_hua"/>
+        </menu>
+    </item>
+
+</menu>

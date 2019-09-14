@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/items"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/recycler_view_height"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        app:behavior_peekHeight="@dimen/size_64dp"
+        app:layout_insetEdge="bottom"
+        app:behavior_hideable="false">
+
+    <FrameLayout
+            android:id="@+id/title_item"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_64dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+            android:id="@+id/city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/size_16dp"
+            android:gravity="center_vertical"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:textSize="@dimen/text_size_20sp"
+            android:textColor="@color/colorPrimaryText"
+            app:layout_constraintTop_toTopOf="@+id/title_item"
+            app:layout_constraintBottom_toBottomOf="@+id/title_item"
+            app:layout_constraintStart_toStartOf="@+id/title_item"/>
+
+    <ImageView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/size_32dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/up"
+            app:layout_constraintTop_toTopOf="@+id/title_item"
+            app:layout_constraintBottom_toBottomOf="@+id/title_item"
+            app:layout_constraintEnd_toEndOf="@+id/title_item"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="276dp"
+            android:background="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/title_item"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
